@@ -18,11 +18,3 @@ export class Thumb extends PraiseButton {
         return this.star;
     }
 }
-
-let praise = new PraiseButton();
-console.log(praise.star);
-console.log(praise.addPraise());
-
-let thumb = new Thumb();
-console.log(thumb.star);
-console.log(thumb.addPraise()); 

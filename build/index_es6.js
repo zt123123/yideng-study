@@ -60,11 +60,3 @@ var Thumb = exports.Thumb = function (_PraiseButton) {
 
     return Thumb;
 }(PraiseButton);
-
-var praise = new PraiseButton();
-console.log(praise.star);
-console.log(praise.addPraise());
-
-var thumb = new Thumb();
-console.log(thumb.star);
-console.log(thumb.addPraise());

@@ -1,10 +1,13 @@
-SystemJS.import('/node_modules/jquery/dist/jquery.min.js')
+SystemJS.import('/build/index_es6.js')
     .then(function (m) {
-        window.$ = m;
-    }).then(function () {
-        SystemJS.import('/build/index_es6.js')
-            .then(function (m) {
-                $.fn.PraiseButton = new m.PraiseButton();
-                $.fn.Thumb = new m.Thumb();
-            });
+        $.fn.praise = new m.PraiseButton();
+        $.fn.thumb = new m.Thumb();
+        console.log($("body").praise.addPraise());
+        console.log($("body").praise.addPraise());
+        console.log($("body").praise.addPraise());
+
+        console.log($("body").thumb.addPraise());
+        console.log($("body").thumb.addPraise());
+        console.log($("body").thumb.addPraise());
+
     });
